@@ -3,7 +3,7 @@
 A collection of open-source quantum mechanics (QM) and molecular dynamics (MD) analysis toolkits for **Computer-Aided Drug Design (CADD)**.
 
 ### Post_MD_Analysis
-MD analizi sonrası sonuçların analizini kolaylaştıran scriptler, otomasyonlar bulunur.
+Contains scripts and automations for the analysis of post-MD trajectory results.
 
 ## License
 
