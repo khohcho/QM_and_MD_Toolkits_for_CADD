@@ -5,8 +5,6 @@ A collection of open-source quantum mechanics (QM) and molecular dynamics (MD) a
 ### Post_MD_Analysis
 Contains scripts and automations for the analysis of post-MD trajectory results.
 
-## License
 
-This project is licensed under the **GNU General Public License v3.0** — see the [LICENSE](./LICENSE) file for details.
 
 
