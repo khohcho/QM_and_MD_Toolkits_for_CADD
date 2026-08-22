@@ -1,6 +1,6 @@
 # Post-MD Analysis Toolkit
 
-## prolif.py
+## prolif_run.py
 
 A professional, robust Python toolkit for analyzing Protein-Ligand and Nucleic Acid-Ligand Interaction Fingerprints (IFP) from Molecular Dynamics (MD) trajectories. This script leverages **MDAnalysis** and **ProLIF** to extract, visualize, and quantify key pharmacophoric interactions while eliminating background noise.
 
@@ -51,7 +51,7 @@ Before running the script, ensure the following files are present in your workin
 Simply execute the script in your terminal:
 
 ```bash
-python prolif.py
+python prolif_run.py
 ```
 
 The script will prompt you:
@@ -66,5 +66,16 @@ Answer according to your system, and the automated pipeline will begin processin
 *   **Deprecation Warnings:** You may see `DeprecationWarning` messages in the terminal output regarding MDAnalysis or ProLIF internals. These are expected due to the rapid evolution of these libraries and do not affect the accuracy of your results.
 *   **3D HTML Forced Saves:** The terminal output will indicate `[✓] 3D saved: .../complex3d_frameX.html`. This utilizes a custom bypass method to write standard web code directly to the disk, overcoming the native limitation of `py3Dmol` requiring an interactive Jupyter Notebook. You can open these `.html` files in any standard web browser.
 
-## License
-This project is licensed under the GPL-3.0 License to maintain compatibility with ProLIF and support the open-source computational chemistry community.
+## Third-Party Tools & Licenses
+`prolif_run.py` relies on the following open-source tools. Please review and comply with their respective licenses:
+
+| Tool | Purpose in `prolif_run.py` | License |
+| --- | --- | --- |
+| MDAnalysis | `.tpr`/`.xtc` handling, atom selections, topology repair | GPL-2.0-or-later |
+| ProLIF | IFP calculation, barcode, ligand-network plots | Apache-2.0 |
+| RDKit | Molecular representation used by ProLIF | BSD-3-Clause |
+| NumPy | Array math and axis tick calculations | BSD-3-Clause |
+| pandas | IFP DataFrames and CSV outputs | BSD-3-Clause |
+| matplotlib | Agg-backend PNG rendering (barcode) | Matplotlib License (PSF-based) |
+| IPython | HTML display support for network/3D views | BSD-3-Clause |
+| py3Dmol | 3D visualization HTML | BSD-3-Clause |
